@@ -1,0 +1,563 @@
+
+/* ==========================================
+   AI RESUME ANALYZER
+   MODERN AI SAAS - PURPLE & BLUE THEME
+========================================== */
+
+
+/* ---------- MAIN BACKGROUND ---------- */
+
+.stApp {
+    background: linear-gradient(
+        135deg,
+        #f5f3ff 0%,
+        #eef2ff 50%,
+        #eff6ff 100%
+    );
+}
+
+
+/* ---------- MAIN CONTENT ---------- */
+
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    max-width: 1200px;
+}
+
+
+/* ---------- GENERAL TEXT ---------- */
+
+.stApp,
+.stApp p,
+.stApp label,
+.stApp span,
+.stApp li {
+    color: #1e293b;
+}
+
+
+/* ---------- MAIN HEADING ---------- */
+
+h1 {
+    color: #312e81 !important;
+    font-weight: 800 !important;
+}
+
+
+/* ---------- SECTION HEADINGS ---------- */
+
+h2,
+h3 {
+    color: #3730a3 !important;
+    font-weight: 700 !important;
+}
+
+h2,
+h3 {
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+
+/* ---------- INPUT LABELS ---------- */
+
+[data-testid="stWidgetLabel"] p {
+    color: #334155 !important;
+    font-weight: 600;
+}
+
+
+/* ---------- TEXT AREA ---------- */
+
+[data-testid="stTextArea"] {
+    background: #ffffff;
+    border: 1px solid #e0e7ff;
+    border-radius: 14px;
+    padding: 8px;
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.04);
+}
+
+.stTextArea textarea {
+    border-radius: 12px;
+    border: 1px solid #c7d2fe;
+    background-color: #ffffff;
+    color: #1e293b;
+    font-size: 15px;
+}
+
+.stTextArea textarea::placeholder {
+    color: #94a3b8;
+    opacity: 1;
+}
+
+.stTextArea textarea:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 1px #6366f1;
+}
+
+[data-testid="stTextArea"]:focus-within {
+    border-color: #818cf8;
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.12);
+}
+
+
+/* ---------- FILE UPLOADER ---------- */
+
+[data-testid="stFileUploader"] {
+    background: #ffffff;
+    border: 1.5px dashed #818cf8;
+    border-radius: 16px;
+    padding: 16px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.06);
+}
+
+/* Uploader dropzone */
+
+[data-testid="stFileUploaderDropzone"] {
+    background: #f8faff !important;
+    border: 1px dashed #a5b4fc !important;
+    border-radius: 12px !important;
+}
+
+/* Uploader text */
+
+[data-testid="stFileUploaderDropzone"] p,
+[data-testid="stFileUploaderDropzone"] span {
+    color: #334155 !important;
+}
+
+/* Browse files button */
+
+[data-testid="stFileUploaderDropzone"] button {
+    background: #eef2ff !important;
+    color: #4338ca !important;
+    border: 1px solid #c7d2fe !important;
+    border-radius: 8px !important;
+}
+
+/* Browse button hover */
+
+[data-testid="stFileUploaderDropzone"] button:hover {
+    background: #e0e7ff !important;
+    color: #3730a3 !important;
+}
+
+/* Uploaded file name */
+
+[data-testid="stFileUploaderFileName"],
+[data-testid="stFileUploaderFile"] {
+    color: #1e293b !important;
+}
+
+
+/* ---------- BUTTONS ---------- */
+
+.stButton > button {
+    background: linear-gradient(
+        135deg,
+        #6366f1,
+        #3b82f6
+    ) !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 0.75rem 2rem !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    min-height: 48px;
+    box-shadow: 0 5px 14px rgba(79, 70, 229, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+/* Button text */
+
+.stButton > button p {
+    color: #ffffff !important;
+}
+
+/* Hover */
+
+.stButton > button:hover {
+    background: linear-gradient(
+        135deg,
+        #4f46e5,
+        #2563eb
+    ) !important;
+    color: #ffffff !important;
+    box-shadow: 0 8px 20px rgba(79, 70, 229, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Active */
+
+.stButton > button:active {
+    transform: translateY(0);
+}
+
+/* Disabled */
+
+.stButton > button:disabled {
+    background: #cbd5e1 !important;
+    color: #64748b !important;
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+
+/* ---------- DOWNLOAD BUTTON ---------- */
+
+.stDownloadButton > button {
+    background: linear-gradient(
+        135deg,
+        #6366f1,
+        #3b82f6
+    ) !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 10px !important;
+    padding: 0.65rem 1.4rem !important;
+    font-weight: 600 !important;
+    transition: all 0.2s ease;
+}
+
+.stDownloadButton > button p {
+    color: #ffffff !important;
+}
+
+.stDownloadButton > button:hover {
+    background: linear-gradient(
+        135deg,
+        #4f46e5,
+        #2563eb
+    ) !important;
+    box-shadow: 0 6px 16px rgba(79, 70, 229, 0.25);
+    transform: translateY(-1px);
+}
+
+
+/* ---------- METRIC CARDS ---------- */
+
+[data-testid="stMetric"] {
+    background: #ffffff;
+    border: 1px solid #e0e7ff;
+    border-radius: 18px;
+    padding: 22px;
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+[data-testid="stMetric"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(79, 70, 229, 0.10);
+}
+
+[data-testid="stMetricLabel"] {
+    color: #475569 !important;
+    font-weight: 600;
+}
+
+[data-testid="stMetricValue"] {
+    color: #312e81 !important;
+    font-weight: 800;
+}
+
+
+/* ---------- SCORE CARDS ---------- */
+
+.score-card {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #e0e7ff;
+    border-radius: 18px;
+    padding: 24px;
+    min-height: 160px;
+    box-shadow: 0 8px 24px rgba(79, 70, 229, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.score-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(79, 70, 229, 0.13);
+}
+
+.score-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #475569 !important;
+    margin-bottom: 12px;
+}
+
+.score-value {
+    font-size: 36px;
+    font-weight: 800;
+    color: #4338ca !important;
+    margin: 0;
+}
+
+.score-description {
+    font-size: 13px;
+    color: #64748b !important;
+    margin-top: 8px;
+}
+
+
+/* ---------- PROGRESS BARS ---------- */
+
+[data-testid="stProgressBar"] {
+    background: transparent;
+}
+
+[data-testid="stProgressBar"] > div {
+    background-color: #e2e8f0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+[data-testid="stProgressBar"] > div > div {
+    background: linear-gradient(
+        90deg,
+        #6366f1,
+        #3b82f6
+    );
+    border-radius: 20px;
+}
+
+
+/* ---------- SKILLS COMPARISON ---------- */
+
+.skills-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.skills-heading h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    color: #1e293b;
+}
+
+.matched-heading > span:first-child {
+    color: #059669;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.missing-heading > span:first-child {
+    color: #d97706;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.skills-count {
+    margin-left: auto;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    background: #e0e7ff;
+    color: #4338ca;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 18px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(79, 70, 229, 0.08);
+}
+
+.matched-skill {
+    background: rgba(16, 185, 129, 0.10);
+    border: 1px solid rgba(16, 185, 129, 0.20);
+    color: #065f46;
+}
+
+.missing-skill {
+    background: rgba(245, 158, 11, 0.10);
+    border: 1px solid rgba(245, 158, 11, 0.20);
+    color: #92400e;
+}
+
+.skill-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.matched-skill .skill-dot {
+    background: #10b981;
+}
+
+.missing-skill .skill-dot {
+    background: #f59e0b;
+}
+
+
+/* ---------- ALERTS AND FEEDBACK ---------- */
+
+[data-testid="stAlert"] {
+    border-radius: 12px;
+    border: none;
+    padding: 14px 18px;
+}
+
+
+/* ---------- DIVIDERS ---------- */
+
+hr {
+    border-color: #dbeafe;
+}
+
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+@media (max-width: 768px) {
+    .block-container {
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    h1 {
+        font-size: 2rem !important;
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
+    }
+
+    h3 {
+        font-size: 1.2rem !important;
+    }
+
+    [data-testid="stMetric"] {
+        padding: 16px;
+    }
+
+    .score-card {
+        padding: 18px;
+    }
+
+    .skill-item {
+        padding: 12px 14px;
+    }
+
+    .stButton > button,
+    .stDownloadButton > button {
+        max-width: 100%;
+    }
+}
+
+
+/* ---------- SKILL CARDS USED BY app.py ---------- */
+
+.skills-card {
+    padding: 18px;
+    border-radius: 12px;
+    min-height: 180px;
+    border: 1px solid;
+}
+
+.matched-card {
+    background: #effdf6;
+    border-color: #a7f3d0;
+    color: #047857;
+}
+
+.missing-card {
+    background: #fffbeb;
+    border-color: #fcd34d;
+    color: #b45309;
+}
+
+.skills-card .skills-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.skill-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.matched-count {
+    background: #d1fae5;
+    color: #047857;
+}
+
+.missing-count {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.skills-card .skill-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: 1px solid;
+}
+
+.skills-card .matched-item {
+    background: #dcfce7;
+    border-color: #a7f3d0;
+    color: #065f46;
+}
+
+.skills-card .missing-item {
+    background: #fef3c7;
+    border-color: #fcd34d;
+    color: #92400e;
+}
+
+.skills-card .skill-dot {
+    width: 10px;
+    height: 10px;
+    min-width: 10px;
+    border-radius: 50%;
+}
+
+.skills-card .matched-dot {
+    background: #10b981;
+}
+
+.skills-card .missing-dot {
+    background: #f59e0b;
+}
+
+.skills-card .empty-skills {
+    font-size: 15px;
+    padding: 12px 0;
+}
