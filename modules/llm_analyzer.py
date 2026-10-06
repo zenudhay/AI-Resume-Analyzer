@@ -1,13 +1,34 @@
-
 import os
+
+import streamlit as st
 from dotenv import load_dotenv
 from groq import Groq
+
+
+# --------------------------------------------------
+# LOAD API KEY
+# --------------------------------------------------
 
 load_dotenv()
 
 api_key = os.getenv("GROQ_API_KEY")
+
+# If running on Streamlit Cloud, read the key
+# from Streamlit Secrets.
+if not api_key:
+    try:
+        api_key = st.secrets["GROQ_API_KEY"]
+    except Exception:
+        api_key = None
+
+
+# Create Groq client only when an API key is available
 client = Groq(api_key=api_key) if api_key else None
 
+
+# --------------------------------------------------
+# AI RESUME ANALYSIS
+# --------------------------------------------------
 
 def analyze_resume_with_llm(
     resume_text,
